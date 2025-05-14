@@ -1,0 +1,162 @@
+body {
+    overflow-x: hidden;
+    background-color: rgb(253, 251, 247);
+}
+
+.my_header {
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid orange; */
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+    
+    text-align: center;
+    line-height: 80px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* .col {
+    border: 1px solid blue;
+    height: 80px;
+} */
+.navbar {
+    height: 80px;
+}
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.my_carousel {
+    position: absolute;
+    top: 60%;
+    left: 15%;   
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(200, 200, 200, 0.1);
+    /* width: 30px; */
+}
+.card-text{
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+}
+.card-title{
+    text-align: center;
+    color: #333333;
+    font-size: 18px;
+    margin: 0px 0px 32px;
+}
+.line{
+    border-right: 0.5px solid black;
+    height: 480px;
+}
+
+.my_carousel2 {
+    position: absolute;
+    top: 10%;
+    left: 7%;   
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* 비율 유지용 (4:3) */
+    overflow: hidden;
+}
+.image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    height: auto;
+    transition: opacity 0.5s ease;
+    display: block;
+}
+/* 기본 이미지 보이게 */
+.base-img {
+    z-index: 1;
+    opacity: 1;
+}
+/* hover 이미지는 처음엔 투명 */
+.hover-img {
+    z-index: 2;
+    opacity: 0;
+}
+/* 카드에 마우스 올리면 hover 이미지 보이고, 기본 이미지 감춤 */
+.card-1:hover .hover-img {
+  opacity: 1;
+}
+.card-1:hover .base-img {
+  opacity: 0;
+}
+
+.card-1 {
+    background-color: rgb(249, 246, 240);
+    border: none;
+}
+
+.detail-btn {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.card:hover .detail-btn {
+    opacity: 1;
+}
+
+
+.detail-btn:hover {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.my_find_coffee {
+    width: 100%;
+    padding: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(249, 246, 240);
+}
+
+.my_footer {
+    width: 100%;
+    padding: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2b2b2b;  /* 진한 회색 */
+    color: white;
+    font-size: 14px;
+}
+.my_footer p {
+    margin: 0;
+    color: #e0e0e0;
+}
+.my_footer input.form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    color: white;
+}
+.my_footer input::placeholder {
+    color: #aaa;
+}
+.my_footer small {
+    color: #aaa;
+}
+.my_footer .bi {
+    font-size: 1.2rem;
+    color: white;
+    transition: color 0.3s;
+}
+.my_footer .bi:hover {
+    color: #00bfff; /* 블루보틀 컬러 느낌 */
+}
